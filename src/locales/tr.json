@@ -1,0 +1,86 @@
+{
+    "navbar": {
+        "products": "Ürünler",
+        "about": "Hakkımızda",
+        "contact": "İletişim"
+    },
+    "hero": {
+        "tagline": "%100 Doğal · Vegan · El Yapımı",
+        "title_line1": "Doğayla Bağını",
+        "title_line2": "Yeniden Kur",
+        "description": "Gaziantep'in kadim zeytinyağlı sabun geleneğini, modern yaşamın ritmine uyarlıyoruz. Gerçek temizlik, geride iz bırakmamaktan geçer.",
+        "cta_explore": "Koleksiyonu Keşfet",
+        "cta_story": "Hikayemiz"
+    },
+    "products": {
+        "section_subtitle": "Koleksiyon",
+        "section_title": "Ürünlerimiz",
+        "section_description": "Günün temposundan uzaklaşmak ve kendine ait bir an yaratmak için tasarlandı.",
+        "product_subtitle": "Zeytinyağlı Sabun",
+        "product_description": "Tüm cilt tipleri için uygun, dermatolojik testleri yapılmış bir zeytinyağlı sabun. Yumuşak köpüğüyle cildi nazikçe sarar, zeytinyağının doğal dokusunu teninizde hissettirir.",
+        "features": {
+            "traditional": "Geleneksel üretim",
+            "all_skin": "Tüm cilt tipleri",
+            "vegan": "Vegan",
+            "dermatological": "Dermatolojik test"
+        },
+        "ingredients_title": "İçerik (INCI)",
+        "ingredients_note": "*Gliserin, geleneksel sabun yapımı sırasında doğal olarak oluşur",
+        "origin": "Menşei",
+        "batch": "Parti No",
+        "responsible_person": "Sorumlu Kişi",
+        "shelf_life": "Kullanım Ömrü",
+        "coming_soon": "Çok Yakında",
+        "coming_soon_subtitle": "Çok yakında satışta olacak"
+    },
+    "sustainability": {
+        "section_subtitle": "Sorumluluğumuz",
+        "section_title": "Sürdürülebilirlik",
+        "intro": "The Soap Opera, doğaya ve gelecek nesillere karşı sorumluluğunun farkında olan bir üretim anlayışını benimser.",
+        "quote": "\"Bizim için doğallık, bir trend değil; doğayla yeniden bağ kurmanın en yalın yoludur.\"",
+        "description": "Gereksiz fazlalıklardan arınmış içerikler, sade formüller ve bilinçli seçimlerle doğayla dengeli bir ilişki kurmayı amaçlarız.",
+        "value1_title": "Doğal İçerikler",
+        "value1_description": "Yalnızca doğadan gelen, bilinçli seçilmiş hammaddeler",
+        "value2_title": "Vegan",
+        "value2_description": "Hayvansal içerik kullanmıyoruz, hayvanlarda test yapmıyoruz",
+        "value3_title": "İz Bırakmayan",
+        "value3_description": "Doğaya saygılı, gelecek nesilleri düşünen üretim"
+    },
+    "rituals": {
+        "section_subtitle": "Nasıl Kullanılır",
+        "section_title": "Ritüel",
+        "step1_title": "Buluşturun",
+        "step1_description": "Sabunu suyla buluşturun.",
+        "step2_title": "Köpürtün",
+        "step2_description": "Avuçlarınızda yavaşça köpürtün.",
+        "step3_title": "Keşfedin",
+        "step3_description": "Teninizle temas ederken durun, nefes alın. Her köpükte, doğayla kurulan küçük bağı keşfedin.",
+        "quote_en": "\"The only drama you need is in the bubbles.\"",
+        "quote_tr": "Tek ihtiyacın olan drama, köpüklerin içinde."
+    },
+    "about": {
+        "section_subtitle": "Hikayemiz",
+        "section_title": "Hakkımızda",
+        "intro": "<span>The Soap Opera</span>, Gaziantep'in taş sokaklarında, zeytin ağaçlarının gölgesinde yüzyıllardır süregelen bir bilgelikten doğdu.",
+        "paragraph1": "Bu topraklarda sabun; zamanın yavaş aktığı, emeğin kutsal sayıldığı ve doğayla uyumun hayatın merkezinde olduğu bir yaşam biçiminin parçasıydı. Zeytinyağıyla yoğrulan bu sabunlar, sadece bedene değil, ruha da dokunurdu.",
+        "paragraph2": "Geleneksel zeytinyağlı sabun, yıllar boyunca sade bir amaca değil; <strong>arınmaya, şifalanmaya ve kendine iyi gelmeye</strong> hizmet etti.",
+        "quote": "\"Bizim için gerçek temizlik, geride iz bırakmamaktan geçer.\"",
+        "paragraph3": "Biz, bu mirası taşıyan kız kardeşler olarak, geçmişin sessiz ustalığını bugünün dünyasıyla yeniden düşünmeye başladık. Sabunun, doğayla ve doğallıkla kurduğumuz bağı yeniden hatırlatan en yalın ritüel olduğuna inanıyoruz.",
+        "paragraph4": "Bu yüzden The Soap Opera'da yalnızca <strong>doğal, vegan ve bilinçli içerikler</strong> kullanıyor; üretimin her aşamasında doğaya saygılı, gelecek nesilleri düşünen bir dengeyi önceliklendiriyoruz.",
+        "highlight": "Etnik köklerden beslenen, sanatsal bir bakışla şekillenen ve yenilikle harmanlanan bir anlatının parçasıyız. Bugün, geleneksel zeytinyağlı sabunu modern yaşamın ritmine uyarlarken; onu yalnızca işlevsel bir ürün olarak değil, <strong>duyulara hitap eden, gündelik hayata anlam katan bir deneyim</strong> olarak yeniden yorumluyoruz.",
+        "paragraph5": "<strong>Kadın girişimciliğinin dönüştürücü gücüne inanıyoruz.</strong> The Soap Opera, üretmenin ötesinde düşünen; gelişen, değişen ve yeni olasılıklara açık bir marka. Bugün attığımız her adım, yarın hayata geçirmeyi planladığımız daha yenilikçi, daha yaratıcı ve daha bilinçli projelerin başlangıcı.",
+        "closing_line1": "Sessiz ama güçlü.",
+        "closing_line2": "Sade ama derin."
+    },
+    "footer": {
+        "brand_description": "Geçmişe saygılı, bugüne duyarlı ve geleceğe umutla bakan bir yolculuk. Sessiz ama güçlü. Sade ama derin.",
+        "tagline": "The only drama you need is in the bubbles.",
+        "explore": "Keşfet",
+        "products": "Ürünler",
+        "about": "Hakkımızda",
+        "sustainability": "Sürdürülebilirlik",
+        "ritual": "Ritüel",
+        "contact": "İletişim",
+        "copyright": "© 2026 The Soap Opera. Tüm hakları saklıdır."
+    }
+}

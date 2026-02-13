@@ -1,0 +1,86 @@
+{
+    "navbar": {
+        "products": "Products",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "hero": {
+        "tagline": "100% Natural · Vegan · Handmade",
+        "title_line1": "Reconnect",
+        "title_line2": "With Nature",
+        "description": "We adapt Gaziantep's ancient olive oil soap tradition to the rhythm of modern life. True cleanliness means leaving no trace behind.",
+        "cta_explore": "Explore Collection",
+        "cta_story": "Our Story"
+    },
+    "products": {
+        "section_subtitle": "Collection",
+        "section_title": "Our Products",
+        "section_description": "Designed to escape the tempo of the day and create a moment of your own.",
+        "product_subtitle": "Olive Oil Soap",
+        "product_description": "A dermatologically tested olive oil soap suitable for all skin types. Its soft lather gently embraces the skin, letting you feel the natural texture of olive oil on your skin.",
+        "features": {
+            "traditional": "Traditional production",
+            "all_skin": "All skin types",
+            "vegan": "Vegan",
+            "dermatological": "Dermatologically tested"
+        },
+        "ingredients_title": "Ingredients (INCI)",
+        "ingredients_note": "*Glycerin is naturally produced during traditional soap making",
+        "origin": "Origin",
+        "batch": "Batch No",
+        "responsible_person": "Responsible Person",
+        "shelf_life": "Shelf Life",
+        "coming_soon": "Coming Soon",
+        "coming_soon_subtitle": "Available for purchase soon"
+    },
+    "sustainability": {
+        "section_subtitle": "Our Responsibility",
+        "section_title": "Sustainability",
+        "intro": "The Soap Opera embraces a production philosophy that is aware of its responsibility to nature and future generations.",
+        "quote": "\"For us, naturalness is not a trend; it's the simplest way to reconnect with nature.\"",
+        "description": "We aim to establish a balanced relationship with nature through content free of unnecessary extras, simple formulas, and conscious choices.",
+        "value1_title": "Natural Ingredients",
+        "value1_description": "Only consciously selected raw materials from nature",
+        "value2_title": "Vegan",
+        "value2_description": "We don't use animal ingredients or test on animals",
+        "value3_title": "Leave No Trace",
+        "value3_description": "Production that respects nature and thinks of future generations"
+    },
+    "rituals": {
+        "section_subtitle": "How to Use",
+        "section_title": "Ritual",
+        "step1_title": "Meet",
+        "step1_description": "Introduce the soap to water.",
+        "step2_title": "Lather",
+        "step2_description": "Gently lather in your palms.",
+        "step3_title": "Discover",
+        "step3_description": "Stop while touching your skin, breathe. In every bubble, discover the small connection with nature.",
+        "quote_en": "\"The only drama you need is in the bubbles.\"",
+        "quote_tr": "The only drama you need is in the bubbles."
+    },
+    "about": {
+        "section_subtitle": "Our Story",
+        "section_title": "About Us",
+        "intro": "<span>The Soap Opera</span> was born from a wisdom that has continued for centuries in the stone streets of Gaziantep, in the shadow of olive trees.",
+        "paragraph1": "In these lands, soap was part of a way of life where time flowed slowly, labor was considered sacred, and harmony with nature was at the center of life. These soaps, kneaded with olive oil, touched not only the body but also the soul.",
+        "paragraph2": "Traditional olive oil soap has served not just a simple purpose over the years, but <strong>purification, healing, and self-care</strong>.",
+        "quote": "\"For us, true cleanliness means leaving no trace behind.\"",
+        "paragraph3": "As sisters carrying this heritage, we began to rethink the silent mastery of the past with today's world. We believe that soap is the simplest ritual that reminds us of the connection we have with nature and naturalness.",
+        "paragraph4": "That's why at The Soap Opera, we only use <strong>natural, vegan, and conscious ingredients</strong>; we prioritize a balance that respects nature and considers future generations at every stage of production.",
+        "highlight": "We are part of a narrative fed by ethnic roots, shaped by an artistic vision, and blended with innovation. Today, as we adapt traditional olive oil soap to the rhythm of modern life, we reinterpret it not just as a functional product, but as an <strong>experience that appeals to the senses and adds meaning to everyday life</strong>.",
+        "paragraph5": "<strong>We believe in the transformative power of women entrepreneurship.</strong> The Soap Opera is a brand that thinks beyond production; it develops, changes, and is open to new possibilities. Every step we take today is the beginning of more innovative, more creative, and more conscious projects we plan to bring to life tomorrow.",
+        "closing_line1": "Quiet but powerful.",
+        "closing_line2": "Simple but profound."
+    },
+    "footer": {
+        "brand_description": "A journey respectful of the past, sensitive to the present, and hopeful for the future. Quiet but powerful. Simple but profound.",
+        "tagline": "The only drama you need is in the bubbles.",
+        "explore": "Explore",
+        "products": "Products",
+        "about": "About Us",
+        "sustainability": "Sustainability",
+        "ritual": "Ritual",
+        "contact": "Contact",
+        "copyright": "© 2026 The Soap Opera. All rights reserved."
+    }
+}
