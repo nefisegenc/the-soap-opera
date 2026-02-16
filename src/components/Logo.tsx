@@ -17,7 +17,7 @@ const Logo = () => {
 
                 <div className="w-6 border-t border-black my-0.5"></div>
 
-                {/* THE */}
+                {/* The */}
                 <div className="font-heading text-[0.6rem] font-bold tracking-widest text-black leading-none">
                     — THE —
                 </div>
