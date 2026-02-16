@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Outer Circle -->
+  <circle cx="50" cy="50" r="48" fill="#F5F0E8" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Inner Circle -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- 100% Natural -->
+  <text x="50" y="22" text-anchor="middle" font-family="serif" font-size="5.5" font-weight="bold" letter-spacing="0.8" fill="#1a1a1a">100% NATURAL</text>
+  
+  <!-- Line -->
+  <line x1="42" y1="25" x2="58" y2="25" stroke="#1a1a1a" stroke-width="0.8"/>
+
+  <!-- THE -->
+  <text x="50" y="33" text-anchor="middle" font-family="serif" font-size="6" font-weight="bold" letter-spacing="2" fill="#1a1a1a">— THE —</text>
+
+  <!-- SOAP -->
+  <text x="50" y="52" text-anchor="middle" font-family="serif" font-size="22" font-weight="900" fill="#1a1a1a" letter-spacing="-0.5">SOAP</text>
+
+  <!-- OPERA -->
+  <text x="50" y="66" text-anchor="middle" font-family="serif" font-size="17" font-weight="900" fill="#1a1a1a" letter-spacing="-0.3">OPERA</text>
+
+  <!-- Tagline -->
+  <text x="50" y="78" text-anchor="middle" font-family="cursive" font-size="5.5" fill="#1a1a1a" transform="rotate(-2, 50, 78)">The only drama you</text>
+  <text x="50" y="85" text-anchor="middle" font-family="cursive" font-size="5.5" fill="#1a1a1a" transform="rotate(-2, 50, 85)">need is in the bubbles.</text>
+</svg>

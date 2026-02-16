@@ -25,6 +25,9 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: 'The Soap Opera',
   description: 'Premium handcrafted soaps for the modern soul.',
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
