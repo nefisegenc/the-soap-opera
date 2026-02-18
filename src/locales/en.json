@@ -151,11 +151,13 @@
         "section2_item3": "Providing customer communication",
         "section2_item4": "Fulfilling legal obligations",
         "section2_item5": "Analyzing website performance",
+        "section2_outro": "is processed for these purposes.",
         "section3_title": "3. Legal Grounds",
         "section3_intro": "Your personal data is processed:",
         "section3_item1": "Based on your explicit consent,",
         "section3_item2": "If it is necessary for the establishment or performance of a contract,",
         "section3_item3": "For the purpose of fulfilling legal obligations.",
+        "section3_outro": "is being processed.",
         "section4_title": "4. Transfer of Personal Data",
         "section4_intro": "Your personal data may be shared with:",
         "section4_item1": "Payment institutions",
@@ -169,7 +171,8 @@
         "section5_item2": "Requesting correction",
         "section5_item3": "Requesting deletion",
         "section5_item4": "Objecting to processing",
-        "section5_outro": "You can direct your applications to:",
+        "section5_outro": "you have these rights.",
+        "section5_contact_intro": "You can direct your applications to:",
         "section5_email": "info@thesoapopera.co"
     },
     "cookies": {
