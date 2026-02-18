@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Mail, Instagram } from 'lucide-react';
+import { Mail, Instagram, Linkedin } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 const Footer = () => {
@@ -48,6 +48,12 @@ const Footer = () => {
                                 <a href="https://instagram.com/thesoapopera.co" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-bg-cream/70 hover:text-bg-cream transition-colors text-sm group">
                                     <Instagram className="w-4 h-4" />
                                     <span>@thesoapopera.co</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/company/thesoapopera/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-bg-cream/70 hover:text-bg-cream transition-colors text-sm group">
+                                    <Linkedin className="w-4 h-4" />
+                                    <span>The Soap Opera</span>
                                 </a>
                             </li>
                         </ul>
