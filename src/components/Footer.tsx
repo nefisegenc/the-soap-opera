@@ -55,10 +55,21 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom */}
-                <div className="border-t border-bg-cream/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div className="border-t border-bg-cream/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-bg-cream/50 text-xs">
                         {t.footer.copyright}
                     </p>
+                    <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2">
+                        <Link href="/privacy" className="text-bg-cream/50 hover:text-bg-cream text-xs transition-colors">
+                            {t.footer.privacy}
+                        </Link>
+                        <Link href="/cookies" className="text-bg-cream/50 hover:text-bg-cream text-xs transition-colors">
+                            {t.footer.cookies}
+                        </Link>
+                        <Link href="/kvkk" className="text-bg-cream/50 hover:text-bg-cream text-xs transition-colors">
+                            {t.footer.kvkk}
+                        </Link>
+                    </div>
                 </div>
             </div>
         </footer>
