@@ -4,20 +4,20 @@ import './globals.css';
 import Providers from '@/components/Providers';
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-playfair',
   display: 'swap',
 });
 
 const lato = Lato({
   weight: ['300', '400', '700'],
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-lato',
   display: 'swap',
 });
 
 const caveat = Caveat({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-caveat',
   display: 'swap',
 });
@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${playfair.variable} ${lato.variable} ${caveat.variable} font-sans bg-bg-cream text-black antialiased scroll-smooth`}>
+    <html lang="tr" suppressHydrationWarning>
+      <body className={`${playfair.variable} ${lato.variable} ${caveat.variable} font-body bg-bg-cream text-primary antialiased scroll-smooth`}>
         <Providers>
           {children}
         </Providers>

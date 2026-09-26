@@ -12,18 +12,23 @@ const About = () => {
                 <div className="max-w-4xl mx-auto">
                     {/* Section Header */}
                     <div className="text-center mb-16">
-                        <p className="text-xs uppercase tracking-[0.3em] text-black/50 mb-4">{t.about.section_subtitle}</p>
-                        <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-6">
+                        <p className="text-xs uppercase tracking-[0.3em] text-olive-deep mb-4">{t.about.section_subtitle}</p>
+                        <h2 className="font-heading text-4xl md:text-5xl font-medium text-primary mb-6">
                             {t.about.section_title}
                         </h2>
-                        <div className="w-16 h-px bg-primary/30 mx-auto"></div>
+                        <div className="w-16 h-px bg-olive/40 mx-auto"></div>
                     </div>
 
                     {/* Story Content */}
-                    <div className="space-y-8 text-black/80 leading-relaxed">
-                        <p className="text-lg md:text-xl font-body" dangerouslySetInnerHTML={{ 
-                            __html: t.about.intro.replace('<span>', '<span class="font-heading text-2xl text-primary">')
-                        }} />
+                    <div className="space-y-8 text-ink-soft leading-relaxed">
+                        <div className="space-y-3">
+                            <p className="text-lg md:text-xl font-body" dangerouslySetInnerHTML={{
+                                __html: t.about.intro.replace('<span>', '<span class="font-heading text-2xl text-primary">')
+                            }} />
+                            <p className="font-heading italic text-lg md:text-xl text-olive">
+                                {t.about.origin}
+                            </p>
+                        </div>
 
                         <p className="font-body">
                             {t.about.paragraph1}
@@ -31,7 +36,7 @@ const About = () => {
 
                         <p className="font-body" dangerouslySetInnerHTML={{ __html: t.about.paragraph2 }} />
 
-                        <blockquote className="border-l-4 border-primary/30 pl-6 py-4 my-8 italic text-xl font-heading text-primary/90">
+                        <blockquote className="border-l-4 border-olive/40 pl-6 py-4 my-8 italic text-xl font-heading text-olive-deep">
                             {t.about.quote}
                         </blockquote>
 
@@ -48,8 +53,8 @@ const About = () => {
                         <p className="font-body" dangerouslySetInnerHTML={{ __html: t.about.paragraph5 }} />
 
                         <div className="text-center mt-16 space-y-2">
-                            <p className="font-heading text-xl text-primary italic">{t.about.closing_line1}</p>
-                            <p className="font-heading text-xl text-primary italic">{t.about.closing_line2}</p>
+                            <p className="font-heading text-xl text-olive italic">{t.about.closing_line1}</p>
+                            <p className="font-heading text-xl text-olive italic">{t.about.closing_line2}</p>
                         </div>
                     </div>
                 </div>

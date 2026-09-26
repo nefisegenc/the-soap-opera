@@ -1,12 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #111111;
-  /* Deep Black */
+  --color-primary: #2A3322;
+  /* Deep Olive Ink (headings, strong text) */
   --color-secondary: #333333;
   --color-accent: #666666;
+  --color-ink-soft: #4A5140;
+  /* Body text */
+  --color-ink-muted: #5F6553;
+  /* Captions and small labels */
+  --color-olive: #536C40;
+  /* Soap Green */
+  --color-olive-deep: #3F5230;
+  /* Hover state and small text on green tints */
   --color-bg-cream: #EAE0D5;
   /* Light Coffee / Latte Tone */
+  --color-foam: #F7F3EC;
+  /* Foam Cream (text on soap green) */}
+
+/* inline: next/font sets these variables on <body>, so they must resolve where they are used */
+@theme inline {
   --font-heading: var(--font-playfair);
   --font-body: var(--font-lato);
   --font-script: var(--font-caveat);

@@ -42,6 +42,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         setMounted(true);
     }, []);
 
+    // Keep <html lang> in sync so CSS uppercase uses Turkish casing (i → İ)
+    useEffect(() => {
+        document.documentElement.lang = language;
+    }, [language]);
+
     const setLanguage = (lang: Language) => {
         setLanguageState(lang);
         localStorage.setItem('language', lang);
