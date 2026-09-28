@@ -22,11 +22,11 @@ const Hero = () => {
                         <p className="font-body text-base md:text-lg text-ink-soft mb-12 max-w-md mx-auto md:mx-0 leading-relaxed">
                             {t.hero.description}
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <a href="#products" className="px-10 py-4 bg-olive text-foam rounded-full text-xs uppercase tracking-[0.2em] hover:bg-olive-deep transition-all duration-300">
+                        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center md:justify-start">
+                            <a href="#products" className="px-10 py-4 whitespace-nowrap bg-olive text-foam rounded-full text-xs uppercase tracking-[0.2em] hover:bg-olive-deep transition-all duration-300">
                                 {t.hero.cta_explore}
                             </a>
-                            <a href="#about" className="px-10 py-4 border border-primary/30 text-primary rounded-full text-xs uppercase tracking-[0.2em] hover:bg-olive hover:border-olive hover:text-foam transition-all duration-300">
+                            <a href="#about" className="px-10 py-4 whitespace-nowrap border border-primary/30 text-primary rounded-full text-xs uppercase tracking-[0.2em] hover:bg-olive hover:border-olive hover:text-foam transition-all duration-300">
                                 {t.hero.cta_story}
                             </a>
                         </div>

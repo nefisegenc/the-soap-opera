@@ -1,16 +1,35 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Globe, ShoppingBag } from 'lucide-react';
+import { ChevronDown, Globe, ShoppingBag } from 'lucide-react';
 import Logo from './Logo';
-import { useLanguage } from '@/context/LanguageContext';
+import { LANGUAGES, useLanguage } from '@/context/LanguageContext';
 import { useCart } from '@/context/CartContext';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+    const languageMenuRef = useRef<HTMLDivElement>(null);
     const { language, setLanguage, t } = useLanguage();
     const { count, openCart } = useCart();
+
+    // Close the language menu on outside click or Escape
+    useEffect(() => {
+        if (!languageMenuOpen) return;
+        const onPointerDown = (event: MouseEvent) => {
+            if (!languageMenuRef.current?.contains(event.target as Node)) setLanguageMenuOpen(false);
+        };
+        const onKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') setLanguageMenuOpen(false);
+        };
+        document.addEventListener('mousedown', onPointerDown);
+        document.addEventListener('keydown', onKeyDown);
+        return () => {
+            document.removeEventListener('mousedown', onPointerDown);
+            document.removeEventListener('keydown', onKeyDown);
+        };
+    }, [languageMenuOpen]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,10 +39,6 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const toggleLanguage = () => {
-        setLanguage(language === 'tr' ? 'en' : 'tr');
-    };
 
     return (
         <nav
@@ -54,14 +69,44 @@ const Navbar = () => {
 
                     <div className="flex items-center space-x-6">
                         {/* Language Switcher */}
-                        <button
-                            onClick={toggleLanguage}
-                            className="text-primary hover:text-olive transition-colors font-bold text-xs uppercase tracking-widest flex items-center gap-2"
-                            title={language === 'tr' ? 'Switch to English' : 'Türkçe\'ye geç'}
-                        >
-                            <Globe className="w-4 h-4" />
-                            <span>{language.toUpperCase()}</span>
-                        </button>
+                        <div ref={languageMenuRef} className="relative">
+                            <button
+                                type="button"
+                                onClick={() => setLanguageMenuOpen((open) => !open)}
+                                aria-expanded={languageMenuOpen}
+                                aria-controls="language-menu"
+                                aria-label={t.navbar.language}
+                                className="text-primary hover:text-olive transition-colors font-bold text-xs uppercase tracking-widest flex items-center gap-2"
+                            >
+                                <Globe className="w-4 h-4" />
+                                <span>{language.toUpperCase()}</span>
+                                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${languageMenuOpen ? 'rotate-180' : ''}`} />
+                            </button>
+                            {languageMenuOpen && (
+                                <ul
+                                    id="language-menu"
+                                    className="absolute right-0 top-full mt-3 w-44 py-2 bg-bg-cream border border-olive/20 rounded-2xl shadow-lg"
+                                >
+                                    {LANGUAGES.map(({ code, label }) => (
+                                        <li key={code}>
+                                            <button
+                                                type="button"
+                                                lang={code}
+                                                aria-current={code === language}
+                                                onClick={() => {
+                                                    setLanguage(code);
+                                                    setLanguageMenuOpen(false);
+                                                }}
+                                                className={`w-full flex items-center justify-between px-4 py-2 font-body text-sm transition-colors hover:bg-olive/10 ${code === language ? 'text-olive-deep font-bold' : 'text-primary'}`}
+                                            >
+                                                <span>{label}</span>
+                                                <span className="text-[10px] uppercase tracking-widest text-ink-muted">{code}</span>
+                                            </button>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </div>
 
                         {/* Cart */}
                         <button

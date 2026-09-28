@@ -3,8 +3,26 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import trTranslations from '@/locales/tr.json';
 import enTranslations from '@/locales/en.json';
+import nlTranslations from '@/locales/nl.json';
+import deTranslations from '@/locales/de.json';
+import frTranslations from '@/locales/fr.json';
+import esTranslations from '@/locales/es.json';
+import itTranslations from '@/locales/it.json';
 
-type Language = 'tr' | 'en';
+export type Language = 'tr' | 'en' | 'nl' | 'de' | 'fr' | 'es' | 'it';
+
+// Shown in the language menu, each in its own language
+export const LANGUAGES: { code: Language; label: string }[] = [
+    { code: 'tr', label: 'Türkçe' },
+    { code: 'en', label: 'English' },
+    { code: 'nl', label: 'Nederlands' },
+    { code: 'de', label: 'Deutsch' },
+    { code: 'fr', label: 'Français' },
+    { code: 'es', label: 'Español' },
+    { code: 'it', label: 'Italiano' },
+];
+
+const isLanguage = (value: string | null | undefined): value is Language => LANGUAGES.some((lang) => lang.code === value);
 
 type TranslationsType = typeof trTranslations;
 
@@ -17,6 +35,11 @@ interface LanguageContextType {
 const translations: Record<Language, TranslationsType> = {
     tr: trTranslations,
     en: enTranslations,
+    nl: nlTranslations,
+    de: deTranslations,
+    fr: frTranslations,
+    es: esTranslations,
+    it: itTranslations,
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -27,22 +50,18 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
     useEffect(() => {
         // Get language from localStorage on mount
-        const savedLanguage = localStorage.getItem('language') as Language;
-        if (savedLanguage && (savedLanguage === 'tr' || savedLanguage === 'en')) {
+        const savedLanguage = localStorage.getItem('language');
+        if (isLanguage(savedLanguage)) {
             setLanguageState(savedLanguage);
         } else {
-            // Auto-detect browser language
-            const browserLang = navigator.language.split('-')[0];
-            if (browserLang === 'tr') {
-                setLanguageState('tr');
-            } else {
-                setLanguageState('en');
-            }
+            // Auto-detect from the browser's preferred languages, falling back to English
+            const preferred = (navigator.languages?.length ? navigator.languages : [navigator.language]).map((lang) => lang.split('-')[0]);
+            setLanguageState(preferred.find(isLanguage) ?? 'en');
         }
         setMounted(true);
     }, []);
 
-    // Keep <html lang> in sync so CSS uppercase uses Turkish casing (i → İ)
+    // Keep <html lang> in sync so CSS uppercase follows each language's casing (e.g. Turkish i → İ)
     useEffect(() => {
         document.documentElement.lang = language;
     }, [language]);

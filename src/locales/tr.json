@@ -2,7 +2,8 @@
     "navbar": {
         "products": "Ürünler",
         "about": "Hakkımızda",
-        "contact": "İletişim"
+        "contact": "İletişim",
+        "language": "Dil"
     },
     "hero": {
         "tagline": "%100 Doğal · Vegan · El Yapımı",

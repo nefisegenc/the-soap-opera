@@ -2,7 +2,8 @@
     "navbar": {
         "products": "Products",
         "about": "About Us",
-        "contact": "Contact"
+        "contact": "Contact",
+        "language": "Language"
     },
     "hero": {
         "tagline": "100% Natural · Vegan · Handmade",

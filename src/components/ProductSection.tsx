@@ -54,7 +54,7 @@ const ProductSection = () => {
                 t.products.features.vegan,
                 t.products.features.dermatological
             ],
-            responsiblePerson: 'The Soap Opera, Gaziantep, TR',
+            responsiblePerson: 'The Soap Opera, Amsterdam, NL',
             origin: 'Made in Türkiye',
             batch: 'L26-001',
             pao: t.products.product_shelf_life,
@@ -128,7 +128,7 @@ const ProductSection = () => {
                                         </div>
                                     </div>
 
-                                    <div className="flex items-center justify-between gap-4">
+                                    <div className="flex flex-wrap items-center justify-between gap-4">
                                         <div className="flex flex-col">
                                             <span className="font-heading text-2xl text-primary lining-nums">{priceFormatter.format(product.unitAmount / 100)}</span>
                                             <span className="font-body text-sm text-ink-muted">{product.weight}</span>
@@ -139,7 +139,7 @@ const ProductSection = () => {
                                                 addItem(product.id);
                                                 openCart();
                                             }}
-                                            className="flex items-center gap-2 px-8 py-4 bg-olive text-foam rounded-full text-xs uppercase tracking-[0.2em] hover:bg-olive-deep transition-colors duration-300"
+                                            className="flex items-center gap-2 px-8 py-4 whitespace-nowrap bg-olive text-foam rounded-full text-xs uppercase tracking-[0.2em] hover:bg-olive-deep transition-colors duration-300"
                                         >
                                             <ShoppingBag className="w-4 h-4" />
                                             {t.products.add_to_cart}

@@ -4,6 +4,9 @@ import { CURRENCY, MAX_QUANTITY, getProduct } from '@/lib/products';
 
 type AllowedCountry = Stripe.Checkout.SessionCreateParams.ShippingAddressCollection.AllowedCountry;
 
+// Site languages; Stripe Checkout opens in the same language
+const CHECKOUT_LOCALES: Stripe.Checkout.SessionCreateParams.Locale[] = ['tr', 'en', 'nl', 'de', 'fr', 'es', 'it'];
+
 // EU member states + Türkiye
 const SHIPPING_COUNTRIES: AllowedCountry[] = [
     'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE',
@@ -67,7 +70,7 @@ export async function POST(request: Request) {
         const session = await stripe.checkout.sessions.create({
             mode: 'payment',
             line_items: lineItems,
-            locale: body.locale === 'tr' ? 'tr' : 'en',
+            locale: CHECKOUT_LOCALES.find((code) => code === body.locale) ?? 'auto',
             shipping_address_collection: { allowed_countries: SHIPPING_COUNTRIES },
             ...(shippingRates.length > 0 && { shipping_options: shippingRates.map((id) => ({ shipping_rate: id })) }),
             phone_number_collection: { enabled: true },
